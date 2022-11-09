@@ -1,0 +1,20 @@
+<!-- <p>film works!</p> -->
+<div *ngIf="loggedIn">
+<div *ngFor="let i of films">
+
+    <li>{{i.title}}</li>
+
+    <li>{{i.released}}</li>
+
+    <li>{{i.director}}</li>
+
+    <li>{{i.actors}}</li>
+
+    <li>{{i.poster}}</li>
+
+    <li>{{i.plot}}</li>
+
+    <li>{{i.metascore | rating }}</li>
+   <br>
+</div>
+</div>

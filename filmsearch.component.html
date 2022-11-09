@@ -1,0 +1,28 @@
+<!-- <p>filmsearch works!</p> -->
+<div id="search-film">
+  <form>
+    <label for="search">Search :</label>
+    <input id="search" type="text" name="title"/>
+  </form>
+
+  <ul class="films">
+    <!-- list of <app-film> -->
+        <div *ngFor="let i of films">
+
+    <li>{{i.title}}</li>
+
+    <li>{{i.released}}</li>
+
+    <li>{{i.director}}</li>
+
+    <li>{{i.actors}}</li>
+
+    <li>{{i.poster}}</li>
+
+    <li>{{i.plot}}</li>
+
+    <li>{{i.metascore | rating }}</li>
+   <br>
+</div>
+  </ul>
+</div>
